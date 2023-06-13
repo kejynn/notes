@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "a938988c-58ea-44f7-8cf0-4d6a0a9cfc41",
+		"name": "app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27853167"
+	},
+	"item": [
+		{
+			"name": "account",
+			"item": [
+				{
+					"name": "/account pu",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://kejynn.pythonanywhere.com/account?name=user&secret=password",
+							"protocol": "http",
+							"host": [
+								"kejynn",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"account"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "user"
+								},
+								{
+									"key": "secret",
+									"value": "password"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "session",
+			"item": [
+				{
+					"name": "create token",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://kejynn.pythonanywhere.com/session?name=user&secret=password",
+							"protocol": "http",
+							"host": [
+								"kejynn",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"session"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "user"
+								},
+								{
+									"key": "secret",
+									"value": "password"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete token",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://kejynn.pythonanywhere.com/session?token=s c s 3 5 b o n b m",
+							"protocol": "http",
+							"host": [
+								"kejynn",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"session"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "s c s 3 5 b o n b m"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "note",
+			"item": [
+				{
+					"name": "create note",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://kejynn.pythonanywhere.com/note?token=9 t x h x v d e f f&title=Title12&content=Content12",
+							"protocol": "http",
+							"host": [
+								"kejynn",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "9 t x h x v d e f f"
+								},
+								{
+									"key": "title",
+									"value": "Title12"
+								},
+								{
+									"key": "content",
+									"value": "Content12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://kejynn.pythonanywhere.com/note?token=9 t x h x v d e f f",
+							"protocol": "http",
+							"host": [
+								"kejynn",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "9 t x h x v d e f f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get note",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://kejynn.pythonanywhere.com/note?id=3&token=9 t x h x v d e f f",
+							"protocol": "http",
+							"host": [
+								"kejynn",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "3"
+								},
+								{
+									"key": "token",
+									"value": "9 t x h x v d e f f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://kejynn.pythonanywhere.com/note?id=4&token=9 t x h x v d e f f&title=NewTitle&content=NewContent",
+							"protocol": "http",
+							"host": [
+								"kejynn",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								},
+								{
+									"key": "token",
+									"value": "9 t x h x v d e f f"
+								},
+								{
+									"key": "title",
+									"value": "NewTitle"
+								},
+								{
+									"key": "content",
+									"value": "NewContent"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete note",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://kejynn.pythonanywhere.com/note?id=4&token=9 t x h x v d e f f",
+							"protocol": "http",
+							"host": [
+								"kejynn",
+								"pythonanywhere",
+								"com"
+							],
+							"path": [
+								"note"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "4"
+								},
+								{
+									"key": "token",
+									"value": "9 t x h x v d e f f"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
